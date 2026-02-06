@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { HugeiconsIcon } from "@hugeicons/vue";
 import type { HugeIconType } from "@/utils/icon";
-
-import { ViewIcon } from "@hugeicons/core-free-icons";
+import { ref } from "vue";
+import { ViewIcon, ViewOffIcon } from "@hugeicons/core-free-icons";
 
 interface InputProps {
   placeholder?: string;
@@ -16,6 +16,11 @@ const props = withDefaults(defineProps<InputProps>(), {
 });
 
 const model = defineModel<string>();
+const activeEye = ref(false);
+
+function toggleEye() {
+  activeEye.value = !activeEye.value
+}
 </script>
 
 
@@ -30,8 +35,9 @@ const model = defineModel<string>();
       class="outline-0 flex-1 min-w-0 text-sm bg-transparent text-gray-800 placeholder:text-gray-400"
       :placeholder="props.placeholder">
 
-    <div v-if="props.type === 'password'" class="shrink-0 cursor-pointer">
-      <HugeiconsIcon :icon="ViewIcon" :size="18" color="#1E1E1E" />
+    <div v-if="props.type === 'password'" class="shrink-0 cursor-pointer" @click="toggleEye()">
+      <HugeiconsIcon :icon="ViewIcon" :size="18" color="#1E1E1E" v-if="!activeEye" />
+      <HugeiconsIcon :icon="ViewOffIcon" :size="18" color="#1E1E1E" v-else="activeEye" />
     </div>
   </div>
 </template>
