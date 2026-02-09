@@ -23,25 +23,25 @@ function toggleActive(value: boolean) {
                 <div class="w-full max-w-sm bg-white p-8 rounded-2xl shadow-lg space-y-5">
                     <div class="mb-10 flex flex-col gap-3 text-center" v-if="!active">
                         <h1 class="text-2xl font-extrabold">Bem-vindo de volta</h1>
-                        <p class="text-sm font-medium text-neutral-mind-550">Entre na sua conta para continuar </p>
+                        <p class="text-sm font-medium text-neutral-market-550">Entre na sua conta para continuar </p>
                     </div>
 
                     <div class="mb-10 flex flex-col gap-3 text-center" v-if="active">
                         <h1 class="text-2xl font-extrabold">Criar conta</h1>
-                        <p class="text-sm font-medium text-neutral-mind-550">Gerencie a loja a partir de agora, preencha
+                        <p class="text-sm font-medium text-neutral-market-550">Gerencie a loja a partir de agora, preencha
                             os dados abaixo</p>
                     </div>
 
                     <div class="flex gap-1 justify-center bg-neutral-50 rounded-lg p-1">
                         <button @click="toggleActive(false)" :class="[
-                            'flex-1 p-2 rounded-md text-sm font-medium cursor-pointer text-neutral-mind-500',
-                            !active ? 'bg-green-mind-500 ' : 'bg-neutral-50'
+                            'flex-1 p-2 rounded-md text-sm font-medium cursor-pointer text-neutral-market-500',
+                            !active ? 'bg-green-market-500 ' : 'bg-neutral-50'
                         ]">
                             Login
                         </button>
                         <button @click="toggleActive(true)" :class="[
-                            'flex-1 p-2 rounded-md text-sm font-medium cursor-pointer text-neutral-mind-500',
-                            active ? 'bg-green-mind-500' : 'bg-neutral-50'
+                            'flex-1 p-2 rounded-md text-sm font-medium cursor-pointer text-neutral-market-500',
+                            active ? 'bg-green-market-500' : 'bg-neutral-50'
                         ]">
                             Registrar
                         </button>
@@ -87,8 +87,8 @@ function toggleActive(value: boolean) {
             </div>
 
             <div class="flex gap-1 absolute bottom-5">
-                <p class="text-sm  text-neutral-mind-550">© 2026 Eduardo Octávio.</p>
-                <a href="https://eduardo-octavio-red.vercel.app/" class="text-sm  text-neutral-mind-550">
+                <p class="text-sm  text-neutral-market-550">© 2026 Eduardo Octávio.</p>
+                <a href="https://eduardo-octavio-red.vercel.app/" class="text-sm  text-neutral-market-550">
                     Portifolio</a>
             </div>
         </div>

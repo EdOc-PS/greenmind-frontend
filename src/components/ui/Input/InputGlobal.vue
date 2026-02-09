@@ -27,7 +27,7 @@ function toggleEye() {
 <template>
 
   <div
-    class="bg-white h-10 px-3 py-2 flex gap-2 rounded-lg items-center border border-neutral-200 transition-all focus-within:ring-2 focus-within:ring-green-mind-500/20 focus-within:border-green-mind-500">
+    class="bg-white h-10 px-3 py-2 flex gap-2 rounded-lg items-center border border-neutral-200 transition-all focus-within:ring-2 focus-within:ring-green-market-500/20 focus-within:border-green-market-500">
 
     <HugeiconsIcon :icon="props.icon" :size="18" color="#1E1E1E" v-if="props.icon" class="shrink-0" />
 
@@ -43,6 +43,7 @@ function toggleEye() {
 </template>
 
 <script lang="ts">
+
 // Isso garante que atributos como 'id' ou 'type' caiam no <input> e não na <div>
 export default {
   inheritAttrs: false

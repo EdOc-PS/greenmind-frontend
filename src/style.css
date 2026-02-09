@@ -3,10 +3,18 @@
 
 
 @theme {
-    --color-neutral-mind-500: #1E1E1E;
-    --color-neutral-mind-575: #1E1E1EBF;
-    --color-neutral-mind-550: #1E1E1E80;
-    --color-green-mind-500: #C1DCDC;
+    --color-neutral-market-500: #1E1E1E;
+    --color-neutral-market-575: #1E1E1EBF;
+    --color-neutral-market-550: #1E1E1E80;
+    --color-green-market-500: #C1DCDC;
+}
+
+@layer components {
+    .text-p-market{
+        @apply text-neutral-market-550 font-medium;
+    }
+
+
 }
 
 * {
