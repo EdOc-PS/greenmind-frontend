@@ -4,8 +4,8 @@ import { ShoppingBasket02Icon, UserIcon } from '@hugeicons/core-free-icons';
 </script>
 
 <template>
-    <header className="w-full top-0 z-50 fixed bg-white">
-        <div className="max-w-410 mx-auto py-6 px-6 sm:px-8 lg:px-10 flex items-center justify-between">
+    <header className="w-full top-0 z-50 fixed bg-white/80 backdrop-blur-lg ">
+        <div className="max-w-410 mx-auto py-6 px-6 sm:px-8 lg:px-10 flex items-center justify-between ">
             <p class="font-extrabold text-2xl text-gre">GREEN MARKET</p>
 
             <div class="flex gap-8">

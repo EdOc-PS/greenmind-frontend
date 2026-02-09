@@ -32,18 +32,18 @@ import { FigmaIcon, Github01Icon, Linkedin01Icon } from "@hugeicons/core-free-ic
                         </li>
                     </ul>
                 </div>
-                <div class="flex gap-5">
+                <div class="flex gap-10">
                     <ul class="flex flex-col gap-3">
                         <li class="text-neutral-300 font-bold">
                             Informação
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Sobre nos
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Produto
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Blog
                         </li>
                     </ul>
@@ -51,13 +51,13 @@ import { FigmaIcon, Github01Icon, Linkedin01Icon } from "@hugeicons/core-free-ic
                         <li class="text-neutral-300 font-bold">
                             Empresa
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Comunidade
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Carreiras
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Nossa história
                         </li>
                     </ul>
@@ -65,13 +65,13 @@ import { FigmaIcon, Github01Icon, Linkedin01Icon } from "@hugeicons/core-free-ic
                         <li class="text-neutral-300 font-bold">
                             Contato
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Começando
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Preços
                         </li>
-                        <li class="text-neutral-400 text-sm">
+                        <li class="text-neutral-400">
                             Recursos
                         </li>
                     </ul>

@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<InputProps>(), {
 });
 
 const model = defineModel<string>();
-const activeEye = ref(false);
+const activeEye = ref<boolean>(false);
 
 function toggleEye() {
   activeEye.value = !activeEye.value
@@ -26,14 +26,13 @@ function toggleEye() {
 
 <template>
 
-  <div
-    class="bg-white h-10 px-3 py-2 flex gap-2 rounded-lg items-center border border-neutral-200 transition-all focus-within:ring-2 focus-within:ring-green-market-500/20 focus-within:border-green-market-500">
+  <div class="bg-white h-10 px-3 py-2 flex gap-2 rounded-lg items-center border border-neutral-200 transition-all focus-within:ring-2 
+      focus-within:ring-green-market-500/20 focus-within:border-green-market-500">
 
     <HugeiconsIcon :icon="props.icon" :size="18" color="#1E1E1E" v-if="props.icon" class="shrink-0" />
 
-    <input v-model="model" v-bind="$attrs" :type="props.type"
-      class="outline-0 flex-1 min-w-0 text-sm bg-transparent text-gray-800 placeholder:text-gray-400"
-      :placeholder="props.placeholder">
+    <input v-model="model" v-bind="$attrs" :type="props.type" :placeholder="props.placeholder"
+      class="outline-0 flex-1 min-w-0 text-sm bg-transparent text-gray-800 placeholder:text-gray-400">
 
     <div v-if="props.type === 'password'" class="shrink-0 cursor-pointer" @click="toggleEye()">
       <HugeiconsIcon :icon="ViewIcon" :size="18" color="#1E1E1E" v-if="!activeEye" />

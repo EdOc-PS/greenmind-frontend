@@ -13,8 +13,6 @@
     .text-p-market{
         @apply text-neutral-market-550 font-medium;
     }
-
-
 }
 
 * {
