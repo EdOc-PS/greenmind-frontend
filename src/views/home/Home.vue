@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { HugeiconsIcon } from "@hugeicons/vue";
-import { ArrowRight, CallRinging03Icon, DeliveryBox01Icon, Plant02Icon, Search01Icon } from "@hugeicons/core-free-icons";
+import { ArrowRight, CallRinging03Icon, DeliveryBox01Icon, Plant02Icon, Search01Icon, Star } from "@hugeicons/core-free-icons";
 import Footer from "@/components/layout/footer/Footer.vue";
 import Header from "@/components/layout/header/Header.vue";
 import Button from "@/components/ui/Button/Button.vue";
 import CardSales from "@/components/layout/card-sales/CardSales.vue";
 import Categorys from "@/components/layout/categorys/Categorys.vue";
+import Comentary from "@/components/layout/card-comentary/Comentary.vue";
 </script>
 
 <template>
@@ -118,10 +119,35 @@ import Categorys from "@/components/layout/categorys/Categorys.vue";
         </div>
 
         <!-- Categorias -->
-       <Categorys />
+        <Categorys />
 
-        <div class="mt-20 max-w-410 mx-auto py-6 px-6 sm:px-8 lg:px-10 flex flex-col items-center gap-35">
+        <div class="mt-20 max-w-410 mx-auto py-6 px-6 sm:px-8 lg:px-10 flex flex-col gap-35">
             <!-- Comentarios -->
+            <div class="w-100">
+                <h1 class="text-2xl font-bold text-neutral-market-500"> O que os clientes dizem sobre o GREEN MARKET?
+                </h1>
+            </div>
+            <div
+                class="flex gap-4 overflow-x-auto w-full pb-4 [scrollbar-width:thin] [scrollbar-color:rgba(82,82,82,0.35)_transparent] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-400/40 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb:hover]:bg-neutral-400/60">
+                <div class="min-w-[calc(33.33%-1rem)]">
+                    <Comentary />
+                </div>
+                <div class="min-w-[calc(33.33%-1rem)]">
+                    <Comentary />
+                </div>
+                <div class="min-w-[calc(33.33%-1rem)]">
+                    <Comentary />
+                </div>
+                <div class="min-w-[calc(33.33%-1rem)]">
+                    <Comentary />
+                </div>
+                <div class="min-w-[calc(33.33%-1rem)]">
+                    <Comentary />
+                </div>
+                <div class="min-w-[calc(33.33%-1rem)]">
+                    <Comentary />
+                </div>
+            </div>
         </div>
     </main>
 
@@ -129,5 +155,3 @@ import Categorys from "@/components/layout/categorys/Categorys.vue";
     <Footer />
 
 </template>
-
-<style scoped></style>
